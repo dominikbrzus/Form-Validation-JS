@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://kit.fontawesome.com/6f81cbf427.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <form class="form" action="/signed.html">
+        <h2 class="form__title">Create an account</h2>
+        <label for="email" class="form__label-mail">
+            <input name="email" class="form__input" id="email" type="text" placeholder="E-mail ..." />
+            <div class="form__alert-mail hide">
+                <i class="fa-solid fa-circle-exclamation form__alert-icon"></i>
+                <p class="form__alert-text">The input is empty or invalid. Enter the valid e-mail!</p>
+            </div>
+        </label>
+        <label for="name" class="form__label-name">
+            <input name="name" class="form__input" id="name" type="text" placeholder="Name ..." />
+            <div class="form__alert-name hide">
+                <i class="fa-solid fa-circle-exclamation form__alert-icon"></i>
+                <p class="form__alert-text">Name must be at least 5 charcters.</p>
+            </div>
+        </label>
+        <label for="phone" class="form__label-phone">
+            <input name="phone" class="form__input" id="phone" type="tel" placeholder="Phone ..." />
+            <div class="form__alert-phone hide">
+                <i class="fa-solid fa-circle-exclamation form__alert-icon"></i>
+                <p class="form__alert-text">A valid number must contain digits!</p>
+            </div>
+        </label>
+        <div class="form__pass-area">
+            <label for="password" class="form__label-password">
+                <input name="password" class="form__input" id="password" type="password" placeholder="Password ..." />
+                <div class="form__password-show-password" data-name="visibility"><i class="fa-solid fa-eye"
+                        type="button"></i></div>
+                <div class="form__password-show-password hide" data-name="hidden"><i class="fa-solid fa-eye-slash"
+                        type="button"></i></div>
+                <div class="form__alert-password hide">
+                    <i class="fa-solid fa-circle-exclamation form__alert-icon"></i>
+                    <p class="form__alert-text">The password must be at least 8 characters, one capital letter and
+                        one digit.</p>
+                </div>
+            </label>
+        </div>
+
+        </label>
+        <label for="checkbox" class="form__label-checkbox">
+            <input name="checkbox" class="form__checkbox" id="checkbox" type="checkbox" />
+            <span class="form__checkbox-term">By clicking, you agree to <u>Terms of Use.</u></span>
+            <div class="form__checkbox-alert hide">
+                <i class="fa-solid fa-circle-exclamation form__alert-icon"></i>
+                <p class="form__checkbox-text">Consent is required!</p>
+            </div>
+        </label>
+        <button class="form__btn" type="submit">Sing up</button>
+    </form>
+    <p class="created-text">Created by <a href="www.websitesdesign.pl" class="created-link">websitesdesign.pl</a></p>
+</body>
+
+</html>
